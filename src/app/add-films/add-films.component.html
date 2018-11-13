@@ -1,0 +1,9 @@
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input type="hidden" ngModel #id="ngModel" name="id">
+  <label for="title">Indiquer le titre du film : </label>
+    <input id="title" ngModel #title="ngModel" type="text" name="title">
+    <label for="synopsis">Indiquer le synopsis du film : </label>
+    <input id="synopsis" ngModel #synopsis="ngModel"type="text" name="synopsis">
+  <button>Submit</button>
+</form>
