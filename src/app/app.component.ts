@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
       backSpeed:20,
       showCursor: true,
       cursorChar: "",
-      loop:false
+      loop:true
     }
 
     let typed = new Typed(".typing-element", options);
