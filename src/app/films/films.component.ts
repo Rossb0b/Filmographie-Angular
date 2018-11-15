@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Film } from '../film';
 import { FILMS } from '../mock-films';
+import { Typed } from '../typed.js';
 
 @Component({
   selector: 'app-films',

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Typed } from './typed.js';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Filmographie - Angular';
+
+  ngOnInit() {
+    let options = {
+      strings: ["Bienvenue sur ma Filmographie", "Celle-ci est développée avec Angular 6"],
+      typeSpeed:200,
+      backSpeed:20,
+      showCursor: true,
+      cursorChar: "",
+      loop:false
+    }
+
+    let typed = new Typed(".typing-element", options);
+  }
 }
